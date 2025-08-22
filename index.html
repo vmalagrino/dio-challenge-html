@@ -1,21 +1,361 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Desafio: Tags HTML - Bootcamp DIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Estudos Desenvolvimento Web</h1>
         <hr>
-        <h2>Esta página tem como foco os estudos em HTML, CSS e Javascript.</h2>
+        <h2>Página com foco em estudos em HTML, CSS e Javascript.</h2>
         <h2>Objetivo do Desafio</h2>
         <p>Praticar os conceitos básicos de HTML aprendidos até o momento no Bootcamp da DIO.</p>
     </header>
 
-    
-    
+    <h2>HTML Tags</h2>
+    <aside class="sidebar">
+        <nav>
+            <ul class="tags-list">
+                <li><a href="#h1_h6">&lt;h1&gt; até &lt;h6&gt;</a></li>
+                <li><a href="#p">&lt;p&gt;</a></li>
+                <li><a href="#mark">&lt;mark&gt;</a></li>
+                <li><a href="#small">&lt;small&gt;</a></li>
+                <li><a href="#i">&lt;i&gt;</a></li>
+                <li><a href="#u">&lt;u&gt;</a></li>
+                <li><a href="#strong">&lt;strong&gt;</a></li>
+                <li><a href="#li">&lt;li&gt;</a></li>
+                <li><a href="#ol">&lt;ol&gt;</a></li>
+                <li><a href="#ul">&lt;ul&gt;</a></li>
+                <li><a href="#a">&lt;a&gt;</a></li>
+                <li><a href="#hr">&lt;hr&gt;</a></li>
+                <li><a href="#sub">&lt;sub&gt;</a></li>
+                <li><a href="#sup">&lt;sup&gt;</a></li>
+                <li><a href="#blockquote">&lt;blockquote&gt;</a></li>
+                <li><a href="#font">&lt;font&gt;</a></li>
+                <li><a href="#del">&lt;del&gt;</a></li>
+                <li><a href="#abbr">&lt;abbr&gt;</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2 id="h1_h6">&lt;h1&gt; até &lt;h6&gt;</h2>
+        <p>As tags h1 até h6 são utilizadas para títulos e subtítulos no HTML, sendo h1 de maior importância e h6 o de
+            menor. Cada numeração se refere ao nível de texto. Vale observar que cada página deve ter apenas um h1.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;h1&gt;</span><span class="text">Este é o título 1</span><span
+                    class="tag">&lt;h1&gt;</span><br>
+                <span class="tag">&lt;h2&gt;</span><span class="text">Este é o título 2</span><span
+                    class="tag">&lt;h2&gt;</span><br>
+                <span class="tag">&lt;h3&gt;</span><span class="text">Este é o título 3</span><span
+                    class="tag">&lt;h3&gt;</span><br>
+                <span class="tag">&lt;h4&gt;</span><span class="text">Este é o título 4</span><span
+                    class="tag">&lt;h4&gt;</span><br>
+                <span class="tag">&lt;h5&gt;</span><span class="text">Este é o título 5</span><span
+                    class="tag">&lt;h5&gt;</span><br>
+                <span class="tag">&lt;h6&gt;</span><span class="text">Este é o título 6</span><span
+                    class="tag">&lt;h6&gt;</span><br>
+            </div>
+            <div class="code-block">
+                <h1>Este é o título 1</h1>
+                <h2>Este é o título 2</h2>
+                <h3>Este é o título 3</h3>
+                <h4>Este é o título 4</h4>
+                <h5>Este é o título 5</h5>
+                <h6>Este é o título 6</h6>
+            </div>
+        </div>
+
+
+        <h2 id="p">&lt;p&gt;</h2>
+        <p>A tag p funciona como parágrafo em seu texto, os navegadores adicionam uma linha em branco antes e após a
+            tag.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;p&gt;</span><span class="text">Este texto é um parágrafo.</span><span
+                    class="tag">&lt;p&gt;</span>
+            </div>
+            <div>
+                <p class="code-block">Este texto é um parágrafo</p>
+            </div>
+        </div>
+
+        <h2 id="mark">&lt;mark&gt;</h2>
+        <p>Destaca um texto.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;mark&gt;</span><span class="text">Não esquecer da reunião.</span><span
+                    class="tag">&lt;mark&gt;</span>
+            </div>
+            <div class="code-block"><mark>Não esquecer da reunião.</mark></div>
+        </div>
+
+        <h2 id="small">&lt;small&gt;</h2>
+        <p>Define textos menores (direitos autorais entre outros).</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;small&gt;</span><span class="text">Este texto é pequeno.</span><span
+                    class="tag">&lt;small&gt;</span>
+            </div>
+            <div class="code-block"><small>Este texto é pequeno.</small></div>
+        </div>
+
+        <h2 id="i">&lt;i&gt;</h2>
+        <p>Define o texto em itálico.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;i&gt;</span><span class="text">Este texto é itálico.</span><span
+                    class="tag">&lt;i&gt;</span>
+            </div>
+            <div class="code-block">
+                <i>Este texto é itálico</i>
+            </div>
+        </div>
+
+        <h2 id="u">&lt;u&gt;</h2>
+        <p>Define o texto como sublinhado.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;u&gt;</span><span>Este texto é sublinhado.</span><span
+                    class="tag">&lt;u&gt;</span>
+            </div>
+            <div class="code-block"><u>Este texto é sublinhado.</u></div>
+        </div>
+
+        <h2 id="strong">&lt;strong&gt;</h2>
+        <p>Define um texto como negrito, remetendo a grande importância.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;strong&gt;</span><span>Este texto é importante!</span><span
+                    class="tag">&lt;strong&gt;</span>
+            </div>
+            <div class="code-block">
+                <strong>Este texto é importante!</strong>
+            </div>
+        </div>
+
+        <h2 id="li">&lt;li&gt;</h2>
+        <p>Define um item de uma lista, deve ser utilizado dentro de listas ordenadas &lt;ol&gt; e não ordenadas
+            &lt;ul&gt;.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;ol&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>HTML</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>CSS</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>Javascript</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;/ol&gt;</span><br>
+                <hr>
+                <span class="tag">&lt;ul&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>HTML</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>CSS</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>Javascript</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;/ul&gt;</span><br>
+            </div>
+            <div class="code-block">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ol>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="ol">&lt;ol&gt;</h2>
+        <p>Define uma lista ordenada (numeradores).</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;ol&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>HTML</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>CSS</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>Javascript</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;/ol&gt;</span><br>
+            </div>
+            <div class="code-block">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ol>
+            </div>
+        </div>
+
+
+
+        <h2 id="ul">&lt;ul&gt;</h2>
+        <p>Define uma lista não ordenada (marcadores).</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;ul&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>HTML</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>CSS</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;li&gt;</span><span>Javascript</span><span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;/ul&gt;</span><br>
+            </div>
+            <div class="code-block">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2 id="a">&lt;a&gt;</h2>
+        <p>Define um hiperlink de uma página para outra, podemos utilizar o atributo target="_blank" para o navegador
+            abrir em uma nova página.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;a href="https://www.w3schools.com/tags/default.asp"
+                    target="_blank"&gt;</span><span>Visite W3Schools</span><span class="tag">&lt;a&gt;</span>
+            </div>
+            <div class="code-block">
+                <a href="https://www.w3schools.com/tags/default.asp" target="_blank">Visite W3Schools</a>
+            </div>
+        </div>
+
+        <h2 id="hr">&lt;hr&gt;</h2>
+        <p>Cria uma divisória em seu texto fazendo a separação dos conteúdos</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;p&gt;</span><span>Cria uma divisória em seu texto.</span><span
+                    class="tag">&lt;p&gt;</span><br>
+                <span class="tag">&lt;hr&gt;</span><span></span><br>
+                <span class="tag">&lt;p&gt;</span><span>Separando conteúdos.</span><span class="tag">&lt;p&gt;</span>
+            </div>
+            <div class="code-block">
+                <p>Parte um.</p>
+                <hr>
+                <p>Parte dois.</p>
+            </div>
+        </div>
+
+        <h2 id="sub">&lt;sub&gt;</h2>
+        <p>Define texto subscrito. Aparece meio caractere abaixo da linha normal e pode ser renderizado em uma fonte
+            menor.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                Este texto contém <span class="tag">&lt;sub&gt;</span><span>subscrito</span><span
+                    class="tag">&lt;sub&gt;</span>
+            </div>
+            <div class="code-block">
+                Este texto contém <sub>subscrito</sub>.
+            </div>
+        </div>
+
+        <h2 id="sup">&lt;sup&gt;</h2>
+        <p>Define texto sobrescrito. Aparece meio caractere acima da linha normal e pode ser renderizado em uma fonte
+            maior.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                Este texto contém <span class="tag">&lt;sup&gt;</span><span>sobrescrito</span><span
+                    class="tag">&lt;sup&gt;</span>
+            </div>
+            <div class="code-block">
+                Este texto contém <sup>sobrescrito</sup>.
+            </div>
+        </div>
+
+        <h2 id="blockquote">&lt;blockquote&gt;</h2>
+        <p>Especifica uma seção citada por outra fonte, ideal para citações longas, podemos usar o atributo cite="link
+            da citação".</p>
+
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;</span><span
+                    class="text">Por mais de 60 anos, o WWF tem trabalhado para ajudar as pessoas e a natureza a
+                    prosperar. Como organização líder mundial em conservação, o WWF atua em quase 100 países. Em todos
+                    os níveis, colaboramos com pessoas do mundo todo para desenvolver e entregar soluções inovadoras que
+                    protejam comunidades, a vida selvagem e os lugares onde vivem.</span><span
+                    class="tag">&lt;blockquote&gt;</span>
+            </div>
+            <div class="code-block">
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    Por mais de 60 anos, o WWF tem trabalhado para ajudar as pessoas e a natureza a prosperar. Como
+                    organização líder mundial em conservação, o WWF atua em quase 100 países. Em todos os níveis,
+                    colaboramos com pessoas do mundo todo para desenvolver e entregar soluções inovadoras que protejam
+                    comunidades, a vida selvagem e os lugares onde vivem.
+                </blockquote>
+            </div>
+        </div>
+
+        <h2 id="font">&lt;font&gt;</h2>
+        <p>Define formatações/estilizações para seu texto. A tag font caiu em desuso e hoje estilizamos no CSS.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                <span class="tag">&lt;font&gt;</span><span class="text">ddd</span><span class="tag">&lt;font&gt;</span>
+            </div>
+            <div class="code-block">
+                <p>Um texto <font face="'Trebuchet MS'" color="greenyellow">VERDE</font> e com <font color="greenyellow"
+                        face="Arial, Tahoma, 'Trebuchet MS'">FONTES </font>diferentes</p>
+            </div>
+        </div>
+
+        <h2 id="del">&lt;del&gt;</h2>
+        <p>Define o texto que foi excluído de um documento. Os navegadores geralmente riscam o texto excluído. Podemos
+            utilizar em conjunto com a tag &lt;ins&gt; para grifar o novo texto.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                Minha cor favorita é <span class="tag">&lt;del&gt;</span><span class="text">preto </span><span
+                    class="tag">&lt;/del&gt;</span>verde!
+            </div>
+            <div class="code-block">
+                <p>Minha cor favorita é <del>preto </del><ins>verde</ins>!</p>
+            </div>
+        </div>
+
+        <h2 id="abbr">&lt;abbr&gt;</h2>
+        <p>Define uma abreviação no texto. com o atributo "title" evidenciamos o nome completo ao passar o mouse no
+            texto.</p>
+
+        <div class="example-container">
+            <div class="code-block">
+                O <span class="tag">&lt;abbr title="HyperText Markup Language"&gt;</span><span>HTML </span><span
+                    class="tag">&lt;abbr&gt;</span>foi criado em 1990 por Tim Berners-Lee.
+            </div>
+            <div class="code-block">
+                <p>O <abbr title="HyperText Markup Language">HTML </abbr>foi criado em 1990 por Tim Berners-Lee.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Referências</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">Visite W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Visite MDN Web Docs</a></li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>

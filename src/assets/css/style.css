@@ -1,3 +1,14 @@
+/* reset de página */
+
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
 .tag {color: #569cd6;}
 
 .text {color: white;}
