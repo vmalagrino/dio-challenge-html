@@ -4,15 +4,106 @@
 @import url(/assets/css/descricao.css);
 
 :root {
-    --branco: black;
-    --fonte-principal: 'Montserrat';
-    --fundo-principal: #284863;
-    --fundo-descricao: #778899;
-    --fundo-modelo: #1D2A35;
-    --cor-fonte-principal: #ECECEC;
+    --bg: #0f172a;
+    --bg-light: #111827;
+    --card: #1e293b;
+    --text: #e5e7eb;
+    --accent: #38bdf8;
+    --border: #334155;
 }
 
+/* Corpo */
 body {
-    font-family: var(--fonte-principal);
-    background-color: var(--fundo-principal);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    padding: 2rem;
+    background: linear-gradient(135deg, #020617, #020617);
+    border-bottom: 1px solid var(--border);
+}
+
+.cabecalho__titulo {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+/* Navegação */
+.navegacao__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.navegacao__lista a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    background-color: var(--card);
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.navegacao__lista a:hover {
+    background-color: var(--accent);
+    color: #020617;
+}
+
+/* Conteúdo */
+.descricao {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.descricao__titulo {
+    margin: 2rem 0 0.5rem;
+    color: var(--accent);
+}
+
+.descricao__container {
+    background-color: var(--card);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+}
+
+.container__modelo {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: var(--bg-light);
+    border-left: 3px solid var(--accent);
+}
+
+/* Elementos */
+a {
+    color: var(--accent);
+}
+
+blockquote {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Rodapé */
+.rodape {
+    padding: 2rem;
+    background-color: #020617;
+    border-top: 1px solid var(--border);
+}
+
+.rodape ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.rodape li {
+    margin-bottom: 0.3rem;
 }
